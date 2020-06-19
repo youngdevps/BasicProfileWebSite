@@ -132,16 +132,17 @@ USE_TZ = True
 # Static files settings
 STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static') 
-
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static_in_project')
-]
 
 MEDIA_URL = '/media/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'media ')
 
 if os.environ.get('ENV') == 'PRODUCTION':
+    STATIC_ROOT = os.path.join(BASE_DIR, 'static') 
+
+    STATICFILES_DIRS = [
+        os.path.join(BASE_DIR, 'static_in_project')
+    ]
+
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticfilesStorage'
     
     db_from_env = dj_database_url.config(conn_max_age=500)
