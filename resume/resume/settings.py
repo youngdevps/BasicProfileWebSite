@@ -58,7 +58,6 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
-    
 ]
 
 ROOT_URLCONF = 'resume.urls'
@@ -143,8 +142,8 @@ if os.environ.get('ENV') == 'PRODUCTION':
         os.path.join(BASE_DIR, 'static'),
         os.path.join(BASE_DIR, 'static_in_project')
     ]
-
-    STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticfilesStorage'
+    
+    STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
     db_from_env = dj_database_url.config(conn_max_age=500)
     DATABASES['default'].update(db_from_env)
