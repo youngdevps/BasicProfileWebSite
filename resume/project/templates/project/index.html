@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Resume</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+  <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/resume.min.css' %}" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">Jordy BAYO</span>
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="{% static 'img/profile.png' %}" alt="">
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="{% url 'blog:all_blogs'  %}">Blog</a>
+        </li>
+        {% comment %} <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="{% url 'blog:all_blogs' %}">Blog</a>
+        </li>  {% endcomment %}
+
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid p-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+      <div class="w-100">
+        <h1 class="mb-0">Jordy Riguel
+          <span class="text-primary">BAYO</span>
+        </h1>
+        <div class="subheading mb-5">Cameroon · Douala, NDOG III · (237) 693-448946 ·
+          <a href="mailto:name@email.com">jordiibayo@gmail.com</a>
+        </div>
+        <p class="lead mb-5">I am a software Engineer, experienced in building high performance software/apps from conception to production usage. 
+        Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+        <div class="social-icons">
+          <a href=" https://www.linkedin.com/in/young-devps-5b758b185">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/youngdevps">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href=" https://twitter.com/JordyBayo">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.facebook.com/bazooka.bayo">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://discord.gg/PPwCBe">
+            <i class="fab fa-discord"></i>
+          </a>
+          <a href="https://www.youtube.com/youngdevps">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
+      <div class="w-100">
+        <h2 class="mb-5">Experience</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Senior IoT Systems Developer</h3>
+            <div class="subheading mb-3">BBRAIN</div>
+            <p>The Internet of things is a system of interrelated computing devices, mechanical and digital machines provided with unique identifiers and the ability to transfer data over a network without requiring human-to-human or human-to-computer interaction.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">March 2016 - Present</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Senior Systems Design Architect</h3>
+            <div class="subheading mb-3">AfroTech BGTE</div>
+            <p>Systems design is the process of defining the architecture, modules, interfaces, and data for a system to satisfy specified requirements. Systems design could be seen as the application of systems theory to product development. There is some overlap with the disciplines of systems analysis, systems architecture and systems engineering.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">July 2017 - December 2019</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0">Intermediate Cloud &amp; DevOps Architect - GCP Certified</h3>
+            <div class="subheading mb-3">AGRIX Solutions</div>
+            <p>Cloud computing is the on-demand availability of computer system resources, especially data storage and computing power, without direct active management by the user. The term is generally used to describe data centers available to many users over the Internet.Wikipedia</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">September 2018 - April 2020</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0">Intermediate Mobile Developer</h3>
+            <div class="subheading mb-3">BBRAIN</div>
+            <p>Mobile application development is a term used to denote the act or process by which application software is developed for mobile devices, such as personal digital assistants, enterprise digital assistants or mobile phones.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">September 2017 - Until today</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Intermediate Web Developer</h3>
+            <div class="subheading mb-3">BBRAIN</div>
+            <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">September 2015 - Until today</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Intermediate AI/ML Developer</h3>
+            <div class="subheading mb-3">IUT Fotso Victor</div>
+            <p>In computer science, artificial intelligence, sometimes called machine intelligence, is intelligence demonstrated by machines, in contrast to the natural intelligence displayed by humans and animals.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">July 2017 - Until today</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
+      <div class="w-100">
+        <h2 class="mb-5">Skills</h2>
+
+        <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+        <ul class="list-inline dev-icons">
+          <li class="list-inline-item">
+            <img src="https://img.icons8.com/color/48/000000/python.png"/>
+          </li>
+          <li class="list-inline-item">
+            <img src="https://img.icons8.com/metro/52/000000/raspberry-pi.png"/>
+          </li>
+          <li class="list-inline-item">
+            <img src="https://img.icons8.com/metro/52/000000/java-coffee-cup-logo.png"/>
+          </li>
+          <li class="list-inline-item">
+            <img src="https://img.icons8.com/metro/52/000000/arduino.png"/>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-html5"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-css3-alt"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-js-square"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-angular"></i>
+          </li>
+          <li class="list-inline-item">
+            <img src="https://img.icons8.com/color/48/000000/travis-ci.png"/>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-react"></i>
+          </li>
+          <li class="list-inline-item">
+            <img src="https://img.icons8.com/color/48/000000/django.png"/>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-node-js"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-sass"></i>
+          </li>
+          <li class="list-inline-item">
+            <img src="https://img.icons8.com/color/48/000000/docker.png"/>
+          </li>
+          <li class="list-inline-item">
+            <img src="https://img.icons8.com/ios-filled/50/000000/artificial-intelligence.png"/>
+          </li>
+          <li class="list-inline-item">
+            <img src="https://img.icons8.com/ios-filled/50/000000/bot.png"/>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-wordpress"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-gulp"></i>
+          </li>
+          <li class="list-inline-item">
+            <img src="https://img.icons8.com/color/48/000000/c-programming.png"/>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-grunt"></i>
+          </li>
+          <li class="list-inline-item">
+            <img src="https://img.icons8.com/color/48/000000/c-sharp-logo-2.png"/>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-npm"></i>
+          </li>
+          <li class="list-inline-item">
+            <img src="https://img.icons8.com/color/48/000000/postgreesql.png"/>
+          </li>
+          <li class="list-inline-item">
+            <img src="https://img.icons8.com/color/48/000000/mongodb.png"/>
+          </li>
+          <li class="list-inline-item">
+            <img src="https://img.icons8.com/nolan/64/mysql.png"/>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-cc-paypal"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-cc-stripe"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-google-wallet"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fa fa-mobile"></i>
+          </li>
+          <li class="list-inline-item">
+            <img src="https://img.icons8.com/fluent/48/000000/android.png"/>
+          </li>
+          <li class="list-inline-item">
+            <i class="fa fa-podcast"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fa fa-microchip"></i>
+          </li>
+          <li class="list-inline-item">
+            <img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"/>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-git"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-github"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-linux"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-slack"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-reddit"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-trello"></i>
+          </li>
+          <li class="list-inline-item">
+            <img src="https://img.icons8.com/color/48/000000/flutter.png"/>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-youtube"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-slideshare"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-skype"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-windows"></i>
+          </li>
+          <li class="list-inline-item">
+            <img src="https://img.icons8.com/ultraviolet/40/000000/xbox-r.png"/>
+          </li>
+          <li class="list-inline-item">
+            <img src="https://img.icons8.com/ios/52/000000/ruby-programming-language.png"/>
+          </li>
+          <li class="list-inline-item">
+            <img src="https://img.icons8.com/ios-filled/50/000000/cloud-database.png"/>
+          </li>
+          <li class="list-inline-item">
+            <img src="https://img.icons8.com/color/48/000000/firebase.png"/>
+          </li>
+          
+        </ul>
+
+        <div class="subheading mb-3">Workflow</div>
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Mobile-First, Strong backend + Responsive Design</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Web Dev - Rest API, Cross Browser Testing &amp; Debugging</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            IoT Agents Solutions + security &amp; Cryptography </li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            AI/ML Model + Cloud Deployment(GCP)</li>
+        </ul>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
+      <div class="w-100">
+        <h2 class="mb-5">Interests</h2>
+        <p>Apart from being a Software developer, I enjoy most of my time listeningScience(AI, Physics) Podcast, Gaming also. I love listening and write songs, wich is my another passion. </p>
+        <p class="mb-0">So When forced indoors, I follow also number of sci-fi but I rarely watch, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements software development world.</p>
+      </div>
+    </section>
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="projects">
+      <div class="w-100">
+        <h2 class="mb-5">PUBLIC | SHARABLES Projects</h2>
+            <div class="row">
+                {% for item in projects %}
+                        <div class="card" style="width: 18rem;">
+                            <a href="{{ item.get_absolute_url }}"><img class="card-img-top" src="{{ item.image.url }}" alt="Card image cap"></a>
+                            <div class="card-body">
+                                <h5 class="card-title">{{ item.title }}</h5>
+                                <p class="card-text">{{ item.description|truncatechars:100 }}</p>
+                                {% if item.url %}
+                                    <a href="{{ item.url }}" class="btn btn-primary">Check website</a>
+                                {% endif %}
+                            </div>
+                        </div>
+                {% endfor %}
+            </div>
+      </div>
+    </section>
+
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="blog">
+      <div class="w-100">
+        <h2 class="mb-5">BLog</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Singularity</h3>
+            <div class="subheading mb-3">The First and BEST African PAAS</div>
+            <p><a href="https://singularity-92359.web.app/">singularity.com</a></p>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Youngdevps</h3>
+            <div class="subheading mb-3">The Youtube Blog Repost</div>
+            <p><a href="https://youngdevps.net">youngdevps.net</a></p>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">AfriEdu | BePResent</h3>
+            <div class="subheading mb-3">AI solutions for helping Education in Africa</div>
+            <p><a href="https://github.com/youngdevps/bepresent">work</a></p>
+          </div>
+        </div>
+
+    </section>
+
+
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{% static 'js/resume.min.js' %}"></script>
+
+</body>
+
+</html>
