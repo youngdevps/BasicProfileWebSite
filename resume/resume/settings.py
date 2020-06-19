@@ -137,7 +137,7 @@ MEDIA_URL = '/media/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'media')
 
 if os.environ.get('ENV') == 'PRODUCTION':
-    STATIC_ROOT = os.path.join(BASE_DIR, 'static') 
+    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
     STATICFILES_DIRS = [
         os.path.join(BASE_DIR, 'static'),
@@ -145,6 +145,6 @@ if os.environ.get('ENV') == 'PRODUCTION':
     ]
 
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticfilesStorage'
-    
+
     db_from_env = dj_database_url.config(conn_max_age=500)
     DATABASES['default'].update(db_from_env)
